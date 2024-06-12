@@ -1,7 +1,55 @@
-h1 {
-    font-family: "Roboto";
-    font-weight: 700;
+body {
+    background-blend-mode: multiply;
+    background-color: rgb(78, 28, 148);
+    background-image: url(../src/images/Tim-Burton-bw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    color: whitesmoke;
+    line-height: 1;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 285px 160px;
+    text-align: center;
+}
+header h1 {
+    font-family: "Playfair Display";
     font-size: 96px;
-    font-style: normal;
-    line-height: 144px;
+    font-weight: 700;
+}
+header h3 {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+header h2 {
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 400;
+}
+header a {
+    background: rgb(78, 28, 148);
+    border-radius: 100px;
+    color: whitesmoke;
+    padding: 16px 32px 16px 32px;
+}
+@media (max-width: 900px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 12px;
+    }
 }

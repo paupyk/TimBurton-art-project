@@ -1,12 +1,21 @@
 body {
     background-blend-mode: multiply;
-    background-color: rgb(78, 28, 148);
+    background-color: rgb(42, 22, 69);
     background-image: url(../src/images/Tim-Burton-bw.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.container {
+.grid {
+    color: whitesmoke;
+    line-height: 1;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 285px 160px;
+    display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+}
+.container-h {
     color: whitesmoke;
     line-height: 1;
     max-width: 100%;
@@ -14,6 +23,11 @@ body {
     padding: 285px 160px;
     text-align: center;
 }
+.section {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 header h1 {
     font-family: "Playfair Display";
     font-size: 96px;
@@ -31,12 +45,51 @@ header h2 {
     font-weight: 400;
 }
 header a {
-    background: rgb(78, 28, 148);
-    border-radius: 100px;
     color: whitesmoke;
+    background: rgb(42, 22, 69);
+    border-radius: 100px;
     padding: 16px 32px 16px 32px;
 }
-@media (max-width: 900px) {
+footer {
+    background-blend-mode: multiply;
+    background-color: rgb(42, 22, 69);
+    background-image: url(../src/images/Tim-Burton-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 24px;
+    position: absolute;
+    text-align: left;
+}
+footer img {
+    max-width: 100%;
+}
+footer h3 {
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+footer p {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 20px;
+}
+footer ul {
+    padding: 0;
+}
+footer li {
+    font-family: "Roboto";
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer a {
+    color: whitesmoke;
+}
+    @media (max-width: 960px) {
     header {
         padding: 60px 0;
     }

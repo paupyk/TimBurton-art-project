@@ -13,7 +13,8 @@ body {
     max-height: 100%;
     padding: 285px 160px;
     display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 10px;
 }
 .container-h {
     color: whitesmoke;
@@ -60,6 +61,7 @@ footer {
     line-height: 24px;
     position: absolute;
     text-align: left;
+    max-height: 70%;
 }
 footer img {
     max-width: 100%;
@@ -75,7 +77,6 @@ footer p {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    margin-right: 20px;
 }
 footer ul {
     padding: 0;

@@ -1,34 +1,48 @@
 body {
     background-blend-mode: multiply;
-    background-color: rgb(42, 22, 69);
-    background-image: url(../src/images/Tim-Burton-bw.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.grid {
+    background: rgb(42, 22, 69);
     color: whitesmoke;
-    line-height: 1;
+}
+.container {
     max-width: 100%;
-    max-height: 100%;
-    padding: 285px 160px;
+    margin: 0 auto;
+}
+footer .grid {
+    color: whitesmoke;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 10px;
-}
-.container-h {
-    color: whitesmoke;
     line-height: 1;
     max-width: 100%;
     max-height: 100%;
-    padding: 285px 160px;
-    text-align: center;
+    padding: 80px 160px;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 15px;
 }
-.section {
+.img-resposive {
+    max-width: 100%;
+}
+
+section {
     margin: 0 auto;
     max-width: 1200px;
 }
-
+.grid-2-columns {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+header {
+    background-blend-mode: multiply;
+        background: rgb(42, 22, 69);
+        background-image: url(../src/images/Tim-Burton-bw.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        line-height: 1;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 285px 160px;
+        text-align: center;
+}
 header h1 {
     font-family: "Playfair Display";
     font-size: 96px;
@@ -49,45 +63,24 @@ header a {
     color: whitesmoke;
     background: rgb(42, 22, 69);
     border-radius: 100px;
-    padding: 16px 32px 16px 32px;
-}
-main h2 {
-    color: whitesmoke;
-    font-family: "Poppins";
-    font-size: 18px;
-    font-weight: 700px;
-    line-height: 19.5px;
-    letter-spacing: 5px;
-    padding-top: 180px;
 }
 main h3 {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+main h2 {
     font-family: "Playfair Display";
     font-size: 48px;
     font-weight: 700;
-    line-height: 63.98px;
+    margin: 0;
 }
 main p {
-    color: whitesmoke;
     font-family: "Roboto";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
-    word-spacing: 3px;
-
-} 
-main a {
-    color: whitesmoke;
-    background: rgb(42, 22, 69);
-    border-radius: 100px;
-    padding: 16px 32px 16px 32px;
-}
-.grid-2-columns {
-    grid-template-columns: 1fr 1fr;
-    font-family: "Roboto";
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 18.75px;
-    max-width: 100%;
+    line-height: 1.5;
 }
 footer {
     background-blend-mode: multiply;
@@ -128,7 +121,7 @@ footer li {
 footer a {
     color: whitesmoke;
 }
-    @media (max-width: 960px) {
+@media (max-width: 960px) {
     header {
         padding: 60px 0;
     }
@@ -143,5 +136,14 @@ footer a {
 
     header h3 {
         font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }

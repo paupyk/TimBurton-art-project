@@ -4,8 +4,29 @@ body {
     color: whitesmoke;
 }
 .container {
-    max-width: 100%;
+    display: grid;
+    max-width: 1400;
     margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-gap:16px;
+}
+.grid-2-columns {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+    background-color: whitesmoke;
+    color: black;
 }
 footer .grid {
     color: whitesmoke;
@@ -17,18 +38,27 @@ footer .grid {
     grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 15px;
 }
-.img-resposive {
-    max-width: 100%;
+img.img-resposive {
+    display: block;
+    height: 400;
+    width: 400;
 }
 
 section {
     margin: 0 auto;
     max-width: 1200px;
 }
-.grid-2-columns {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr 1fr;
+section {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 100px;
+}
+section.secondary {
+    background-blend-mode: multiply;
+    background-color: rgb(74, 48, 107);
+    background-image: url(../src/images/TB-theme.png);
+    color: whitesmoke;
+    text-align: center;
 }
 header {
     background-blend-mode: multiply;
@@ -81,6 +111,12 @@ main p {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+}
+main  a {
+    background: black;
+    border-radius: 50px;
+    color: whitesmoke;
+    padding: 20px 16px 20px 16px;
 }
 footer {
     background-blend-mode: multiply;

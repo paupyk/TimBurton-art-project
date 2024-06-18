@@ -11,6 +11,11 @@ body {
 .text-center {
     text-align: center;
 }
+.img-responsive {
+    display: block;
+    height: 700px;
+    width: 700px;
+}
 .grid {
     display: grid;
     grid-gap:16px;
@@ -24,26 +29,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+.grid-3-columns-with-first-narrow {
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-gap: 10px;
+}
 .card {
     background-color: whitesmoke;
     color: black;
+    padding-bottom: 30px;
 }
-footer .grid {
-    color: whitesmoke;
-    display: grid;
-    line-height: 1;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 80px 160px;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 15px;
-}
-img.img-resposive {
-    display: block;
-    height: 400;
-    width: 400;
-}
-
 section {
     margin: 0 auto;
     max-width: 1200px;
@@ -124,11 +118,15 @@ footer {
     background-image: url(../src/images/Tim-Burton-2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: whitesmoke;
     background-position: center;
+    display: grid;
     line-height: 24px;
-    position: absolute;
+    margin: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 80px 160px;
     text-align: left;
-    max-height: 70%;
 }
 footer img {
     max-width: 100%;

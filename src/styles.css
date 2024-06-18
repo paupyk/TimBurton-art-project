@@ -40,13 +40,18 @@ body {
     grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 10px;
 }
-
+.embed {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
 .card {
     background-color: whitesmoke;
     color: black;
     padding-bottom: 30px;
 }
-
+.card-header embed {
+    display: none;
+}
 section {
     margin: 0 auto;
     max-width: 1200px;
@@ -143,7 +148,7 @@ footer {
     background-position: center;
     display: grid;
     line-height: 24px;
-    margin: 20px;
+    margin: 0;
     max-height: 100%;
     max-width: 100%;
     padding: 80px 160px;
